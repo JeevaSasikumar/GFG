@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class GFG {
+	public static void main (String[] args) {
+		Scanner ip=new Scanner(System.in);
+		int t=ip.nextInt();
+		while(t-->0)
+		{
+		    int a=ip.nextInt();
+		    int b[]=new int[a];
+		    int k=ip.nextInt();
+		    for(int i=0;i<a;i++)
+		        b[i]=ip.nextInt();
+	        
+            int c=0;
+	        for(int i=0;i<a;i++)
+	        {
+	           for(int j=0;j<a;j++)
+	           {
+	               if((b[i]%b[j])==k)
+	               c++;
+	           }
+	        }
+	        System.out.println(c);
+	}
+}
+}
